@@ -1,9 +1,8 @@
 #include <iostream>
 
-const int RETURN_CODE_CANNOT_CALCULATE_ANY_PARAMETER = 2;
-
 int main()
 {
+  const int return_code_cannot_calculate_any_parameter = 2;
   int x = 0;
   int prev = 0;
   int prev_prev = 0;
@@ -39,7 +38,7 @@ int main()
   if (count == 0)
   {
     std::cerr << "Not enough elements to find local minimum\n";
-    return RETURN_CODE_CANNOT_CALCULATE_ANY_PARAMETER;
+    return return_code_cannot_calculate_any_parameter;
   }
 
   std::cout << count_local_minimums << "\n";
